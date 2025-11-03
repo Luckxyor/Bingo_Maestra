@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>גלגל המזל - משחק לימודי</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">גלגל המזל שלי! 🎡</h1>
+        
+        <div class="wheel-container">
+            <div class="wheel-pointer">▼</div>
+            <canvas id="wheelCanvas" width="600" height="600"></canvas>
+        </div>
+        
+        <div class="buttons">
+            <button id="resetBtn" class="reset-button">התחל מחדש 🔄</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="תמונה">
+        </div>
+    </div>
+
+    <!-- Modal de confirmación -->
+    <div id="confirmModal" class="modal">
+        <div class="confirm-modal-content">
+            <h2>?בטוח שרוצה להתחיל מחדש</h2>
+            <p>(¿Seguro que quieres reiniciar la ruleta?)</p>
+            <div class="confirm-buttons">
+                <button id="confirmYes" class="confirm-btn yes-btn">כן (Sí) ✓</button>
+                <button id="confirmNo" class="confirm-btn no-btn">לא (No) ✗</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
